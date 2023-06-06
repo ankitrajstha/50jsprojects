@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7d5fff;
+}
+.search {
+  height: 40px;
+  position: relative;
+}
+.input {
+  height: 40px;
+  width: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border: 0;
+  transition: width 0.3s ease;
+}
+.btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 40px;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.input:focus,
+.btn:focus {
+  outline: none;
+}
+.search.active .input {
+  width: 200px;
+}
+.search.active .btn {
+  transform: translateX(198px);
+}
